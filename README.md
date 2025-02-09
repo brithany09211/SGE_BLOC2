@@ -15,7 +15,7 @@ Una vez tengamos Docker instalado y funcionado, procedemos a instalar PyCharm pa
 ![alt text](image-1.png)
 
 Después de instalar PyCharm, comprobaremos que tengamos la versión 3.10. En caso contario tenemos que cambiarla desde la configuración.
-![image](https://github.com/user-attachments/assets/0bfcec37-f4cb-49b2-b5d8-12cdbc45ab8a)
+![alt text](image-10.png)
 
 Instalaremos el pluggin de Docker, que nos permitirá conectarnos a Docker desde PyCharm y gestionar los contenedores.
 ![image](https://github.com/user-attachments/assets/1a4bccac-2f06-46e6-bc07-7451d4e2c7f3)
@@ -28,6 +28,7 @@ Agreagremos el archivo "docker-compose.yml" y lo configuramos con la siguiente i
 
 Desde PyCharm, ejecutaremos el siguiente comando "sudo docker-compose up -d
 "en el archivo "docker-compose.yml", teniendo siempre abierto el Docker Desktop :
+![alt text](image-9.png)
 
 Después, accedemos a http://localhost:80 en el navegador y nos registramos con el usuario y la contraseña por defecto puesto en el archivo docker "docker-compose.yml", nos dejará ingresar a pgAdmin 4.
 ![image](https://github.com/user-attachments/assets/2a0716a7-3082-4fe8-b896-828ccb30551c)
@@ -96,12 +97,14 @@ Finalmente, debemos agregar los últimos códigos CRUD:
 ### **read_registre.py**
 
 ![alt text](image-5.png)
+![alt text](image-12.png)
 
 Recupera y muestra todos los registros de la tabla "clientes".
 
 ### **update_registre.py**
 
 ![alt text](image-6.png)
+![alt text](image-11.png)
 
 Modifica datos de un cliente en la base de datos.
 
