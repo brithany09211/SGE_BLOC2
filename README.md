@@ -41,10 +41,15 @@ En "Connection", ingresaremos los datos del container_name, user y password.
 
 Creamos la carpeta `bloc2_NOMALUMNX` en PyCharm. Posterior, en este directorio, crearemos otra carpeta llamada "postgresql_python". Dentro crearemos los siguientes archivos:
 
-### **connect.py**
+### **connect.py:**
 ![image](https://github.com/user-attachments/assets/8384095b-4b2c-496e-bdca-489abf41b1b6)
 
 Este archivo establecerá la conexión con la base de datos y poder realizar las operaciones CRUD (Create, Read, Update y Delete) en una tabla de PostgreSQL.
+Establece la conexión con PostgreSQL:
+```python
+import psycopg2
+conn = psycopg2.connect(dbname='the_bear', user='admin', password='admin', host='localhost', port=5432)
+```
 
 Los datos los he dejado por defecto:
 - **Base de datos**: the_bear
@@ -53,49 +58,58 @@ Los datos los he dejado por defecto:
 - **Host**: localhost
 - **Puerto**: 5432
 
-Luego, en PyCharm, instalamos los plugins. "psycopg2" es una de las librerías para conectar Python con PostgreSQL, y "pandas" nos permite trabajar con datos en formato de tabla. Además, descargamos el archivo de clientes.csv y lo añadimos en una carpeta con el nombre "send_data_to_db" que estará dentro de la carpeta nuestra carpeta del inicio.
+Luego, Instalamos las dependencias necesarias:
+bash pip install psycopg2 pandas
+ en PyCharm es una de las librerías para conectar Python con PostgreSQL, y "pandas" nos permite trabajar con datos en formato de tabla. Además, descargamos el archivo de clientes.csv y lo añadimos en una carpeta con el nombre "send_data_to_db" que estará dentro de la carpeta nuestra carpeta del inicio.
 
 En "send_data_to_db" creamos los archivos:
 
-### **create_table_to_db.py**
+### **create_table_to_db.py:**
 ![image](https://github.com/user-attachments/assets/ebae9996-4abf-494d-90e7-3bb6d4a324ec)
 
-Que sirve para leer el archivo ".csv" para determinar los nombres y tipos de columnas y luego crear una tabla en la base de datos PostgreSQL con esos campos.
+Crea una tabla en la base de datos basada en el archivo ".csv".
 
-### **csv_to_dict.py**
+### **csv_to_dict.py:**
 ![image](https://github.com/user-attachments/assets/05362e47-38b4-4b28-86e0-86e6a6715db4)
 
-Transformará el archivo `.csv` en una lista de diccionarios. Cada fila será un diccionario donde las claves son los nombres de las columnas y los valores los datos correspondientes.
+ Convierte el archivo ".csv" en un diccionario con claves y valores.
 
 ### **dict_to_db.py**
 ![image](https://github.com/user-attachments/assets/dad241b0-7611-42aa-9eed-f9c0291912e8)
 
+Inserta datos en la base de datos a partir del diccionario.
+
 ### **create_register.py**
 ![image](https://github.com/user-attachments/assets/4135f0b1-f0d4-464d-bcc8-547f7cdde8e7)
+
+Permite insertar nuevos registros en la base de datos.
 
 ### **main.py**
 ![image](https://github.com/user-attachments/assets/5710dbbe-f56f-4579-a287-22562a08ceb2)
 
-Para comprobar que los datos se han añadido, debemos ir a **pgAdmin4**, refrescar la tabla de clientes y ejecutarla para que se muestren los datos introducidos.
+Archivo principal para ejecutar la aplicación.
+
+Comprobación de los datos en pgAdmin
+Refrescamos la tabla de clientes en **pgAdmin4** refrescar la tabla de clientes y ejecutarla para que se muestren los datos introducidos.
 ![image](https://github.com/user-attachments/assets/23373626-0c1e-457e-9d6a-55800ff1e907)
 
-Finalmente, debemos agregar los últimos códigos:
+Finalmente, debemos agregar los últimos códigos CRUD:
 
 ### **read_registre.py**
 
 ![read_registre.py](https://github.com/user-attachments/assets/9dd46f56-ea2d-47d5-8f7f-7b266f8362f3)
 
-conecta a la base de datos y recupera todos los registros de la tabla clientes, mostrando los datos en la terminal.
+Recupera y muestra todos los registros de la tabla "clientes".
 
 ### **update_registre.py**
 
 ![update_registre.py](https://github.com/user-attachments/assets/38be6ed6-03c9-4d0d-a623-c215b8ff60bc)
 
-permite actualizar los datos de un cliente en la base de datos. Busca un registro por su ID y modifica los campos especificados.
+Modifica datos de un cliente en la base de datos.
 
 ### **delete_registre.py**
 
 ![delete_registre.py](https://github.com/user-attachments/assets/9d241fc2-731c-495e-b3b0-0c42d04d9fcb)
 
-Un registro específico de la tabla clientes según el ID proporcionado, asegurando que los datos se borren de la base de datos.
+Elimina un registro específico según su ID.
 
