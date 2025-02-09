@@ -28,7 +28,7 @@ Agreagremos el archivo "docker-compose.yml" y lo configuramos con la siguiente i
 
 Desde PyCharm, ejecutaremos el siguiente comando "sudo docker-compose up -d
 "en el archivo "docker-compose.yml", teniendo siempre abierto el Docker Desktop :
-![1](https://github.com/user-attachments/assets/f14eb01c-8277-49af-af65-74e99a6b7ebc)
+
 
 Después, accedemos a http://localhost:80 en el navegador y nos registramos con el usuario y la contraseña por defecto puesto en el archivo docker "docker-compose.yml", nos dejará ingresar a pgAdmin 4.
 ![image](https://github.com/user-attachments/assets/2a0716a7-3082-4fe8-b896-828ccb30551c)
