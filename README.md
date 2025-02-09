@@ -39,17 +39,16 @@ Creamos un servidor de base de datos del bloque 2
 En "Connection", ingresaremos los datos del container_name, user y password.
 ![image](https://github.com/user-attachments/assets/a9330aab-ef11-40ba-af9a-6b5bd0f830fe)
 
-Creamos la carpeta `bloc2_NOMALUMNX` en PyCharm. Posterior, en este directorio, crearemos otra carpeta llamada "postgresql_python". Dentro crearemos los siguientes archivos:
+Creamos la carpeta bloc2_NOMALUMNX en PyCharm. Posterior, en este directorio, crearemos otra carpeta llamada "postgresql_python". Dentro crearemos los siguientes archivos:
 
 ### **connect.py:**
-![image](https://github.com/user-attachments/assets/8384095b-4b2c-496e-bdca-489abf41b1b6)
+![alt text](image-2.png)
 
 Este archivo establecerá la conexión con la base de datos y poder realizar las operaciones CRUD (Create, Read, Update y Delete) en una tabla de PostgreSQL.
 Establece la conexión con PostgreSQL:
-```python
+python
 import psycopg2
 conn = psycopg2.connect(dbname='the_bear', user='admin', password='admin', host='localhost', port=5432)
-```
 
 Los datos los he dejado por defecto:
 - **Base de datos**: the_bear
@@ -65,7 +64,7 @@ bash pip install psycopg2 pandas
 En "send_data_to_db" creamos los archivos:
 
 ### **create_table_to_db.py:**
-![image](https://github.com/user-attachments/assets/ebae9996-4abf-494d-90e7-3bb6d4a324ec)
+![alt text](image-3.png)
 
 Crea una tabla en la base de datos basada en el archivo ".csv".
 
@@ -80,7 +79,7 @@ Crea una tabla en la base de datos basada en el archivo ".csv".
 Inserta datos en la base de datos a partir del diccionario.
 
 ### **create_register.py**
-![image](https://github.com/user-attachments/assets/4135f0b1-f0d4-464d-bcc8-547f7cdde8e7)
+![alt text](image-4.png)
 
 Permite insertar nuevos registros en la base de datos.
 
@@ -97,19 +96,19 @@ Finalmente, debemos agregar los últimos códigos CRUD:
 
 ### **read_registre.py**
 
-![read_registre.py](https://github.com/user-attachments/assets/9dd46f56-ea2d-47d5-8f7f-7b266f8362f3)
+![alt text](image-5.png)
 
 Recupera y muestra todos los registros de la tabla "clientes".
 
 ### **update_registre.py**
 
-![update_registre.py](https://github.com/user-attachments/assets/38be6ed6-03c9-4d0d-a623-c215b8ff60bc)
+![alt text](image-6.png)
 
 Modifica datos de un cliente en la base de datos.
 
 ### **delete_registre.py**
 
-![delete_registre.py](https://github.com/user-attachments/assets/9d241fc2-731c-495e-b3b0-0c42d04d9fcb)
-
+![alt text](image-7.png)
+![alt text](image-8.png)
 Elimina un registro específico según su ID.
 
