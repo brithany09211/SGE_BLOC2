@@ -109,6 +109,11 @@ Recupera y muestra todos los registros de la tabla "clientes".
 
 ![img_13.png](img_13.png)
 Aquí hemos extraído el teléfono del cliente con id_cliente = 5
+
+![img_14.png](img_14.png)
+Comprobaciones de:
+Les dades de l’Andreu, El correu de l’Andreu, Les dades de la Vivian, La direcció de la Vivian ,Les dades de l’Albert ,La data de cumpleanys de l’Albert
+
 ### **update_registre.py**
 
 ![alt text](image-6.png)
