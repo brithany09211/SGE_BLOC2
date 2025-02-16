@@ -107,6 +107,8 @@ Aquí estamos imprimiendo todos los registros de la tabla Clientes. Cada fila de
 Aquí estamos extrayendo el registro del cliente con id_cliente = 5 de la lista de resultados.
 Recupera y muestra todos los registros de la tabla "clientes".
 
+![img_13.png](img_13.png)
+Aquí hemos extraído el teléfono del cliente con id_cliente = 5
 ### **update_registre.py**
 
 ![alt text](image-6.png)
