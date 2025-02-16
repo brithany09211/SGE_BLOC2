@@ -114,16 +114,18 @@ Aquí hemos extraído el teléfono del cliente con id_cliente = 5
 Comprobaciones de:
 Les dades de l’Andreu, El correu de l’Andreu, Les dades de la Vivian, La direcció de la Vivian ,Les dades de l’Albert ,La data de cumpleanys de l’Albert
 
+![img_15.png](img_15.png)
+Se muestra la información de cada cliente, como su nombre, dirección, teléfono, correo y fecha de nacimiento.
 ### **update_registre.py**
 
-![alt text](image-6.png)
-![alt text](image-11.png)
+![img_18.png](img_18.png)
+![img_19.png](img_19.png)
 
-Modifica datos de un cliente en la base de datos.
+Modifica datos de un cliente en la base de datos en este caso fue el número de teléfono de los tres.
 
 ### **delete_registre.py**
 
-![alt text](image-7.png)
-![alt text](image-8.png)
-Elimina un registro específico según su ID.
+![img_21.png](img_21.png)
+![img_22.png](img_22.png)
+Elimina un registro de los tres que pusismos en delete_registre si lo buscamos podremos ver que ya no existen esos tres:
 
