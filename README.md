@@ -103,6 +103,8 @@ Finalmente, debemos agregar los últimos códigos CRUD:
 Aquí estamos imprimiendo todos los registros de la tabla Clientes. Cada fila de la tabla está representada como una tupla dentro de la lista. Cada tupla contiene las columnas de la tabla (nombre, dirección, teléfono, correo, fecha de cumpleaños).
 ![img_11.png](img_11.png)
 
+![img_12.png](img_12.png)
+Aquí estamos extrayendo el registro del cliente con id_cliente = 5 de la lista de resultados.
 Recupera y muestra todos los registros de la tabla "clientes".
 
 ### **update_registre.py**
